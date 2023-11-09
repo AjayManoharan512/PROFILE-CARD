@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LOTO",sans-serif;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgb(231, 186, 87) 100%);
+    border-radius: 30PX;
+    font-size:1rem;
+    box-shadow: 5px 5px 10px 5px;
+    display: flex;
+    flex-direction:column;
+    animation-name: high;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+
+    
+
+}
+img{
+    border-radius: 100%;
+    margin-left: 30%
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+h1{
+    margin-left: 40%;
+    letter-spacing: 2px;
+}
+#dev{
+    margin-left: 22%;
+}
+p{
+    margin: 10px;
+}
+span{
+    margin-left: 40%;
+}
+.iconsec{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+    margin-top: 15px;
+    
+}
+.fa-brands:hover{
+    background-color: blueviolet;
+    transform: scale(1.8)
+
+}
+
+.CONTACT{
+    text-align: center;
+}
+
+@keyframes high {
+    0%{
+        transform: translateX(-500px);
+
+    }
+    25%{
+        transform: skewX(200deg);
+    }
+    90%{
+        transform: rotate(360deg);
+    }
+    
+    100%{
+        transform:none;}
+    
+}
